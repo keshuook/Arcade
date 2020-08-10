@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Arcade</title>
+</head>
+<body>
+<div id="menu">
+<div id="dropdown-file" class="dropdown">
+File
+<div class="dropdown-content dropdown-file-c">
+Save
+</div>
+<div class="dropdown-content dropdown-file-c" onclick="readCode();">
+Run code
+</div>
+</div>
+<div id="dropdown-widgets" class="dropdown">
+Wigets
+<div class="dropdown-content dropdown-widgets-c" onclick="OpenConsole();">
+show console
+</div>
+<div class="dropdown-content dropdown-widgets-c" onclick="OpenBrowser();">
+show browser
+</div>
+<div class="dropdown-content dropdown-widgets-c" onclick="OpenCode();">
+show code area
+</div>
+</div>
+</div>
+<br>
+<hr>
+<div id="Console" class="widgets">
+<button>
+<svg height="20" width="20">
+<line x1="0" y1="0" x2="20" y2="20" style="stroke:rgb(255,0,0);stroke-width:4" />
+<line x1="20" y1="0" x2="0" y2="20" style="stroke:rgb(255,0,0);stroke-width:4" />
+</svg>
+</button><br>
+<text id="output">
+Welcome to arcade a coding language by Keshuook
+</text>
+</div>
+<br>
+<div id="browser" class="widgets" >
+<button>
+<svg height="20" width="20">
+<line x1="0" y1="0" x2="20" y2="20" style="stroke:rgb(255,0,0);stroke-width:4" />
+<line x1="20" y1="0" x2="0" y2="20" style="stroke:rgb(255,0,0);stroke-width:4" />
+</svg>
+</button>
+<br>
+Browser
+</div>
+<div id="code" class="widgets">
+<button>
+<svg height="20" width="20">
+<line x1="0" y1="0" x2="20" y2="20" style="stroke:rgb(255,0,0);stroke-width:4" />
+<line x1="20" y1="0" x2="0" y2="20" style="stroke:rgb(255,0,0);stroke-width:4" />
+</svg>
+</button>
+<textarea>
+pack 1
+say hello world
+end</textarea>
+</div>
+<script src="script.js">
+</script>
+</body>
+</html>
